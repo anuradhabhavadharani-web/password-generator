@@ -1,4 +1,4 @@
-import random
+import secrets
 
 letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numbers = "0123456789"
@@ -11,6 +11,6 @@ length = int(input("Enter password length: "))
 password = ""
 
 for i in range(length):
-    password += random.choice(all_chars)
+    password += secrets.choice(all_chars)
 
 print("Your generated password is:", password)
